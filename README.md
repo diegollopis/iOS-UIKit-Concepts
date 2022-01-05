@@ -1,2 +1,2 @@
 # iOS-UIKit-Concepts
-Concepts (stackview, scrollview, tableview, bottom sheet screen, etc) made with UIKit
+Concepts (stackview, scrollview, tableview, bottom modal view, etc) made with UIKit
