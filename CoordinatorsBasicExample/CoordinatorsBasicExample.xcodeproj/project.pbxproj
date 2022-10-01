@@ -63,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				EFAF3F5F28C80ADD009F4CFE /* MainCoordinator.swift */,
-				EFAF3F5A28C809D8009F4CFE /* Protocols */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -116,6 +115,7 @@
 			children = (
 				EFAF3F3E28C7FEB6009F4CFE /* AppDelegate.swift */,
 				EFAF3F5628C8061A009F4CFE /* Files */,
+				EFAF3F5A28C809D8009F4CFE /* Protocols */,
 				EF779DA628CAB23F002F9309 /* Coordinator */,
 				EFAF3F5228C8056E009F4CFE /* Views */,
 			);
