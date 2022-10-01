@@ -15,33 +15,10 @@ protocol SecondViewControllerDelegate: AnyObject {
 }
 
 //MARK: - FirstViewController
-class SecondViewController: UIViewController {
+class SecondViewController: BaseViewController {
     
     //MARK: - Variables
     weak var delegate: SecondViewControllerDelegate?
-    private let screenView = SecondView()
-    private var disposeBag = DisposeBag()
-
-    //MARK: - Life cycle functions
-    override func loadView() {
-        self.view = screenView
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "Second View"
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupObservables()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        disposeBag = DisposeBag()
-    }
     
     //MARK: - Init
     convenience init(delegate: SecondViewControllerDelegate) {
@@ -50,12 +27,24 @@ class SecondViewController: UIViewController {
     }
     
     //MARK: - Setup Functions
-    private func setupObservables() {
-        screenView.nextButton.rx.tap
-            .asDriver()
-            .drive(onNext: { [weak self] (_) in
-                self?.delegate?.didTapNext()
-            }).disposed(by: disposeBag)
+    override func setupNextButtonAction() {
+        super.setupNextButtonAction()
+        self.delegate?.didTapNext()
+    }
+    
+    override func setupNavBarTitle(){
+        super.setupNavBarTitle()
+        title = "Second View"
+    }
+    
+    override func setupAboveButtonLabel() {
+        super.setupAboveButtonLabel()
+        screenView.aboveButtonLabel.text = "Second View Button"
+    }
+    
+    override func setupScreenBackgroundColor() {
+        super.setupScreenBackgroundColor()
+        screenView.backgroundColor = .orange
     }
 }
 

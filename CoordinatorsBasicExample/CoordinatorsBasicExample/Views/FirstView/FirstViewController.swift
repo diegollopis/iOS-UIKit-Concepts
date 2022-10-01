@@ -15,33 +15,10 @@ protocol FirstViewControllerDelegate: AnyObject {
 }
 
 //MARK: - FirstViewController
-class FirstViewController: UIViewController {
+class FirstViewController: BaseViewController {
     
     //MARK: - Variables
     weak var delegate: FirstViewControllerDelegate?
-    private let screenView = FirstView()
-    private var disposeBag = DisposeBag()
-
-    //MARK: - Life cycle functions
-    override func loadView() {
-        self.view = screenView
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        title = "First View"
-        navigationController?.navigationBar.prefersLargeTitles = true
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupObservables()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        disposeBag = DisposeBag()
-    }
     
     //MARK: - Init
     convenience init(delegate: FirstViewControllerDelegate) {
@@ -50,11 +27,23 @@ class FirstViewController: UIViewController {
     }
     
     //MARK: - Setup Functions
-    private func setupObservables() {
-        screenView.nextButton.rx.tap
-            .asDriver()
-            .drive(onNext: { [weak self] (_) in
-                self?.delegate?.didTapNext()
-            }).disposed(by: disposeBag)
+    override func setupNextButtonAction() {
+        super.setupNextButtonAction()
+        self.delegate?.didTapNext()
+    }
+    
+    override func setupNavBarTitle(){
+        super.setupNavBarTitle()
+        title = "First View"
+    }
+    
+    override func setupAboveButtonLabel() {
+        super.setupAboveButtonLabel()
+        screenView.aboveButtonLabel.text = "First View Button"
+    }
+    
+    override func setupScreenBackgroundColor() {
+        super.setupScreenBackgroundColor()
+        screenView.backgroundColor = .yellow
     }
 }

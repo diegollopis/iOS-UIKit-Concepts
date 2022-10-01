@@ -1,14 +1,15 @@
 //
-//  ThirdView.swift
+//  BaseView.swift
 //  CoordinatorsBasicExample
 //
-//  Created by Diego Llopis on 08/09/22.
+//  Created by M2Y on 09/09/22.
 //
 
 import UIKit
+import SnapKit
 
-class ThirdView: UIView {
-
+class BaseView: UIView {
+    
     //MARK: - Layout Variables
     lazy var stackView: UIStackView = {
         let stack = UIStackView()
@@ -17,9 +18,8 @@ class ThirdView: UIView {
         return stack
     }()
     
-    lazy var title: UILabel = {
+    lazy var aboveButtonLabel: UILabel = {
         let label = UILabel()
-        label.text = "Third View"
         label.font = label.font.withSize(30)
         label.textAlignment = .center
         return label
@@ -37,7 +37,6 @@ class ThirdView: UIView {
         super.init(frame: frame)
         setupView()
         setupConstraints()
-        backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
@@ -45,25 +44,25 @@ class ThirdView: UIView {
     }
 }
 
-//MARK: - ThirdView Extension - Layout Setup
-extension ThirdView {
+//MARK: - BaseView Extension - Layout Setup
+extension BaseView {
     
-    func setupView() {
+    private func setupView() {
+        
         addSubview(stackView)
-        stackView.addArrangedSubview(title)
+        stackView.addArrangedSubview(aboveButtonLabel)
         stackView.addArrangedSubview(nextButton)
     }
     
-    func setupConstraints() {
+    private func setupConstraints() {
         stackView.snp.makeConstraints { make in
-            make.centerY.equalToSuperview()
-            make.leading.trailing.equalToSuperview().inset(100)
+            make.center.equalToSuperview()
+            make.leading.trailing.equalTo(nextButton)
         }
         
         nextButton.snp.makeConstraints { make in
-            make.width.equalTo(title)
+            make.width.equalTo(aboveButtonLabel)
             make.height.equalTo(50)
         }
     }
-
 }

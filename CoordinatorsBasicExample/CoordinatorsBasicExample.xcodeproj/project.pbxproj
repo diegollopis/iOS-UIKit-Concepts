@@ -7,17 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF779DAA28CAB3C1002F9309 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF779DA928CAB3C1002F9309 /* SecondView.swift */; };
+		EF0E9AB228E8749700F035D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E9AB128E8749700F035D7 /* BaseViewController.swift */; };
 		EF779DAC28CAB4BD002F9309 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF779DAB28CAB4BD002F9309 /* SecondViewController.swift */; };
 		EF779DAE28CAB749002F9309 /* SecondViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF779DAD28CAB749002F9309 /* SecondViewCoordinator.swift */; };
-		EF779DB128CABAFE002F9309 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF779DB028CABAFE002F9309 /* ThirdView.swift */; };
 		EF779DB328CABB57002F9309 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF779DB228CABB57002F9309 /* ThirdViewController.swift */; };
 		EF779DB528CABBED002F9309 /* ThirdViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF779DB428CABBED002F9309 /* ThirdViewCoordinator.swift */; };
+		EF779DB728CB502C002F9309 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF779DB628CB502C002F9309 /* BaseView.swift */; };
 		EFAF3F3F28C7FEB6009F4CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3F3E28C7FEB6009F4CFE /* AppDelegate.swift */; };
 		EFAF3F4328C7FEB6009F4CFE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3F4228C7FEB6009F4CFE /* FirstViewController.swift */; };
 		EFAF3F4828C7FEB8009F4CFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFAF3F4728C7FEB8009F4CFE /* Assets.xcassets */; };
 		EFAF3F4B28C7FEB8009F4CFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFAF3F4928C7FEB8009F4CFE /* LaunchScreen.storyboard */; };
-		EFAF3F5528C805ED009F4CFE /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3F5428C805ED009F4CFE /* FirstView.swift */; };
 		EFAF3F5928C806CD009F4CFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EFAF3F5828C806CD009F4CFE /* SnapKit */; };
 		EFAF3F5C28C809F5009F4CFE /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3F5B28C809F5009F4CFE /* Coordinator.swift */; };
 		EFAF3F5E28C80A2C009F4CFE /* FirstViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAF3F5D28C80A2C009F4CFE /* FirstViewCoordinator.swift */; };
@@ -28,19 +27,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EF779DA928CAB3C1002F9309 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		EF0E9AB128E8749700F035D7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EF779DAB28CAB4BD002F9309 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		EF779DAD28CAB749002F9309 /* SecondViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewCoordinator.swift; sourceTree = "<group>"; };
-		EF779DB028CABAFE002F9309 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		EF779DB228CABB57002F9309 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		EF779DB428CABBED002F9309 /* ThirdViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewCoordinator.swift; sourceTree = "<group>"; };
+		EF779DB628CB502C002F9309 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		EFAF3F3B28C7FEB6009F4CFE /* CoordinatorsBasicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorsBasicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAF3F3E28C7FEB6009F4CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAF3F4228C7FEB6009F4CFE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		EFAF3F4728C7FEB8009F4CFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFAF3F4A28C7FEB8009F4CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFAF3F4C28C7FEB8009F4CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFAF3F5428C805ED009F4CFE /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		EFAF3F5B28C809F5009F4CFE /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		EFAF3F5D28C80A2C009F4CFE /* FirstViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewCoordinator.swift; sourceTree = "<group>"; };
 		EFAF3F5F28C80ADD009F4CFE /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 		EF779DA828CAB38B002F9309 /* SecondView */ = {
 			isa = PBXGroup;
 			children = (
-				EF779DA928CAB3C1002F9309 /* SecondView.swift */,
 				EF779DAB28CAB4BD002F9309 /* SecondViewController.swift */,
 				EF779DAD28CAB749002F9309 /* SecondViewCoordinator.swift */,
 			);
@@ -83,11 +80,19 @@
 		EF779DAF28CABA77002F9309 /* ThirdView */ = {
 			isa = PBXGroup;
 			children = (
-				EF779DB028CABAFE002F9309 /* ThirdView.swift */,
 				EF779DB228CABB57002F9309 /* ThirdViewController.swift */,
 				EF779DB428CABBED002F9309 /* ThirdViewCoordinator.swift */,
 			);
 			path = ThirdView;
+			sourceTree = "<group>";
+		};
+		EF779DB828CB5436002F9309 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				EF779DB628CB502C002F9309 /* BaseView.swift */,
+				EF0E9AB128E8749700F035D7 /* BaseViewController.swift */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		EFAF3F3228C7FEB6009F4CFE = {
@@ -110,8 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				EFAF3F3E28C7FEB6009F4CFE /* AppDelegate.swift */,
-				EF779DA628CAB23F002F9309 /* Coordinator */,
 				EFAF3F5628C8061A009F4CFE /* Files */,
+				EF779DA628CAB23F002F9309 /* Coordinator */,
 				EFAF3F5228C8056E009F4CFE /* Views */,
 			);
 			path = CoordinatorsBasicExample;
@@ -120,6 +125,7 @@
 		EFAF3F5228C8056E009F4CFE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF779DB828CB5436002F9309 /* BaseView */,
 				EFAF3F5328C8059F009F4CFE /* FirstView */,
 				EF779DA828CAB38B002F9309 /* SecondView */,
 				EF779DAF28CABA77002F9309 /* ThirdView */,
@@ -130,7 +136,6 @@
 		EFAF3F5328C8059F009F4CFE /* FirstView */ = {
 			isa = PBXGroup;
 			children = (
-				EFAF3F5428C805ED009F4CFE /* FirstView.swift */,
 				EFAF3F4228C7FEB6009F4CFE /* FirstViewController.swift */,
 				EFAF3F5D28C80A2C009F4CFE /* FirstViewCoordinator.swift */,
 			);
@@ -237,12 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF779DAC28CAB4BD002F9309 /* SecondViewController.swift in Sources */,
-				EF779DAA28CAB3C1002F9309 /* SecondView.swift in Sources */,
+				EF779DB728CB502C002F9309 /* BaseView.swift in Sources */,
 				EFAF3F5C28C809F5009F4CFE /* Coordinator.swift in Sources */,
 				EFAF3F6028C80ADD009F4CFE /* MainCoordinator.swift in Sources */,
+				EF0E9AB228E8749700F035D7 /* BaseViewController.swift in Sources */,
 				EFAF3F4328C7FEB6009F4CFE /* FirstViewController.swift in Sources */,
-				EFAF3F5528C805ED009F4CFE /* FirstView.swift in Sources */,
-				EF779DB128CABAFE002F9309 /* ThirdView.swift in Sources */,
 				EF779DB528CABBED002F9309 /* ThirdViewCoordinator.swift in Sources */,
 				EFAF3F3F28C7FEB6009F4CFE /* AppDelegate.swift in Sources */,
 				EF779DB328CABB57002F9309 /* ThirdViewController.swift in Sources */,
